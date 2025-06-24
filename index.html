@@ -11,6 +11,11 @@
             margin: 0;
             padding: 20px;
         }
+        .category-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 40px 0 15px;
+        }
         .product-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -19,7 +24,7 @@
         .product-card {
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Asigură spațierea între elemente */
+            justify-content: space-between;
             height: 100%;
             padding: 15px;
             background-color: white;
@@ -27,7 +32,6 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
         .product-title {
             font-size: 1.1rem;
             margin: 10px 0 5px;
@@ -47,19 +51,15 @@
             padding: 8px 12px;
             border-radius: 4px;
             display: inline-block;
-
         }
         .product-link:hover {
             background-color: #0056b3;
         }
-
         .product-card img {
             width: 100%;
             aspect-ratio: 4 / 3;
-           // object-fit: cover; /* Ajustează imaginea fără a o distorsiona */
             border-radius: 5px;
         }
-
         .modal {
             display: none;
             position: fixed;
@@ -71,7 +71,6 @@
             height: 100%;
             background-color: rgba(0, 0, 0, 0.7);
         }
-
         .modal-content {
             margin: auto;
             display: block;
@@ -80,7 +79,6 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
         }
-
         .close {
             position: absolute;
             top: 20px;
@@ -90,39 +88,28 @@
             font-weight: bold;
             cursor: pointer;
         }
-
         .new-products {
-            margin: 40px 0; /* 20px sus și jos, 0px stânga și dreapta */
+            margin: 40px 0;
             padding: 15px;
-            background-color: #f0f8ff; /* Albastru deschis */
-            border-radius: 8px; /* Colțuri rotunjite */
+            background-color: #f0f8ff;
+            border-radius: 8px;
         }
-
-
     </style>
 </head>
 <body>
     <h1>Pt detalii : 0745.634.499 (de preferat mesaj pe whatsapp)</h1>
+
+    <h2 class="category-title">Aspiratoare & Curățenie</h2>
     <div class="product-container">
         <div class="product-card">
-    <img class="img-fluid" src="img/koening.jpg" alt="H.Koenig Aspirator" onclick="openModal(this)">
-    <div class="product-title">H.Koenig UPX18 Aspirator Vertical 2-in-1</div>
-    <div class="product-price">300 Lei</div>
-    <div class="product-description">H.Koenig FullPower UPX18 2-in-1 Cordless Upright Vacuum Cleaner, Compact, Lightweight</div>
-    <a class="product-link" href="https://www.amazon.com.be/-/en/FullPower-UPX18-Lightweight-Stand-alone-Multifunctional/dp/B07VGST9SR?th=1" target="_blank">
-       Link
-    </a>
-    </div>
-        <div class="product-card">
-            <img class="img-fluid" src="img/stanley.jpg" alt="">
-            <div class="product-title">STANLEY FATMAX TRIMMER</div>
-            <div class="product-price">500 Lei</div>
-            <div class="product-description">STANLEY FATMAX Lithium Akku Rasentrimmer Trimmer Schnittbreite 33cm Einstellbare Geschwindigkeit Doppelgriff 18V 4,0Ah SFMCST933M1-QW</div>
-            <a class="product-link" href="https://www.amazon.de/dp/B08KDK9LQG?ref=cm_sw_r_cso_wa_apin_dp_GRMT9ZX9VYK2MJSBFT4D&ref_=cm_sw_r_cso_wa_apin_dp_GRMT9ZX9VYK2MJSBFT4D&social_share=cm_sw_r_cso_wa_apin_dp_GRMT9ZX9VYK2MJSBFT4D&previewDoh=1&th=1" target="_blank">
+            <img class="img-fluid" src="img/koening.jpg" alt="H.Koenig Aspirator" onclick="openModal(this)">
+            <div class="product-title">H.Koenig UPX18 Aspirator Vertical 2-in-1</div>
+            <div class="product-price">300 Lei</div>
+            <div class="product-description">H.Koenig FullPower UPX18 2-in-1 Cordless Upright Vacuum Cleaner, Compact, Lightweight</div>
+            <a class="product-link" href="https://www.amazon.com.be/-/en/FullPower-UPX18-Lightweight-Stand-alone-Multifunctional/dp/B07VGST9SR?th=1" target="_blank">
                 Link
             </a>
         </div>
-
         <div class="product-card">
             <img class="img-fluid" src="img/bissell.jpg" alt="">
             <div class="product-title">ASPIRATOR 2 IN 1 BISSEL</div>
@@ -133,17 +120,77 @@
                 Link
             </a>
         </div>
-
         <div class="product-card">
-            <img class="img-fluid" src="img/trimmer-bosch.jpg" alt="">
-            <div class="product-title">TRIMMER BOSCH</div>
+            <img class="img-fluid" src="img/mop.jpg" alt="">
+            <div class="product-title"> Mop cu aburi cu PowerPad și husă de rezervă din microfibră</div>
             <div class="product-price">250 Lei</div>
-            <div class="product-description">BOSCH ART 27 Tagliabordi elettrico</div>
-            <a class="product-link" href="https://www.amazon.it/BOSCH-ART-27-Tagliabordi-elettrico/dp/B01AI2PMU2?th=1" target="_blank">
+            <div class="product-description">Vileda Steam Plus - Mop cu aburi cu PowerPad și husă de rezervă din microfibră, elimină până la 99,9% din bacterii și viruși, pentru toate tipurile de pardoseli, ideal pentru covoare, ambalaj ecologic</div>
+            <a class="product-link" href="https://www.amazon.de/-/en/PowerPad-Microfibre-Replacement-Bacteria-Packaging/dp/B09HMGMMH1" target="_blank">
                 Link
             </a>
         </div>
+    </div>
 
+    <h2 class="category-title">Scule & Grădină</h2>
+    <div class="product-container">
+        <div class="product-card">
+        <img class="img-fluid" src="img/trimmer-bosch.jpg" alt="">
+        <div class="product-title">TRIMMER BOSCH</div>
+        <div class="product-price">250 Lei</div>
+        <div class="product-description">BOSCH ART 27 Tagliabordi elettrico</div>
+        <a class="product-link" href="https://www.amazon.it/BOSCH-ART-27-Tagliabordi-elettrico/dp/B01AI2PMU2?th=1" target="_blank">
+            Link
+        </a>
+    </div>
+        <div class="product-card">
+            <img class="img-fluid" src="img/suflatoare.jpg" alt="">
+            <div class="product-title">Suflantă pentru frunze cu baterie litiu</div>
+            <div class="product-price">800 Lei</div>
+            <div class="product-description">DEWALT Soffiatore Foglie a Batteria Litio Velocità di soffiaggio fino a 144 Km/h</div>
+            <a class="product-link" href="https://www.amazon.it/DeWalt-DCM562P1-QW-Soffiatore-Litio-Giallo/dp/B0155WY7T2" target="_blank">
+                Link
+            </a>
+        </div>
+        <div class="product-card">
+            <img class="img-fluid" src="img/flex.jpg" alt="">
+            <div class="product-title">DEWALT Polizor unghiular 230 mm, 2200 W</div>
+            <div class="product-price">400 Lei</div>
+            <div class="product-description">DEWALT smerigliatrice angolare 230mm 2200w, DWE492-QS</div>
+            <a class="product-link" href="https://www.amazon.it/dp/B0176NLNBS?ref=cm_sw_r_cso_wa_apin_dp_RTJ35172R0BZ6BXM98X4&ref_=cm_sw_r_cso_wa_apin_dp_RTJ35172R0BZ6BXM98X4&social_share=cm_sw_r_cso_wa_apin_dp_RTJ35172R0BZ6BXM98X4&previewDoh=1" target="_blank">
+                Link
+            </a>
+        </div>
+        <div class="product-card">
+            <img class="img-fluid" src="img/flex-baterie.jpg" alt="">
+            <div class="product-title">DEWALT DCG406NT-XJ Polizor unghiular 18V XR fără perii, 125 mm - FARA BATERRIE INCLUSA</div>
+            <div class="product-price">500 Lei</div>
+            <div class="product-description">DEWALT DCG406NT-XJ Polizor unghiular 18V XR fără perii- BATERIA COSTA IN JUR DE 300 de lei</div>
+            <a class="product-link" href="https://www.amazon.it/dp/B075T9ZY4W?ref=cm_sw_r_cso_wa_apin_dp_TEBVVQ2BF4H27ZMR54ZF&ref_=cm_sw_r_cso_wa_apin_dp_TEBVVQ2BF4H27ZMR54ZF&social_share=cm_sw_r_cso_wa_apin_dp_TEBVVQ2BF4H27ZMR54ZF&previewDoh=1" target="_blank">
+                Link
+            </a>
+        </div>
+        <div class="product-card">
+            <img class="img-fluid" src="img/trimmer-baterie.jpg" alt="">
+            <div class="product-title">Trimmer și Tăietor de margini cu baterie 20V - 2 baterii incluse</div>
+            <div class="product-price">400 Lei</div>
+            <div class="product-description">WORX WG163E Trimmer și Tăietor de margini cu baterie 20V- 2 baterii incluse</div>
+            <a class="product-link" href="https://www.amazon.it/dp/B01N2AMWB3?ref=cm_sw_r_cso_wa_apin_dp_P5PRC0MW68CECTD87GS3&ref_=cm_sw_r_cso_wa_apin_dp_P5PRC0MW68CECTD87GS3&social_share=cm_sw_r_cso_wa_apin_dp_P5PRC0MW68CECTD87GS3&previewDoh=1&th=1" target="_blank">
+                Link
+            </a>
+        </div>
+        <div class="product-card">
+            <img class="img-fluid" src="img/sur.jpg" alt="">
+            <div class="product-title">Mașină de înșurubat cu impact Bosch Professional GDX 18V-200</div>
+            <div class="product-price">500 Lei</div>
+            <div class="product-description">Mașină de înșurubat cu impact Bosch Professional GDX 18V-200 Solo 18V max. 200Nm, max. 2400 r/min, fără acumulator și încărcător</div>
+            <a class="product-link" href="https://www.hornbach.ro/p/masina-de-insurubat-cu-impact-bosch-professional-gdx-18v-200-solo-18v-max-200nm-max-2400-r-min-fara-acumulator-si-incarcator/10452594/?srsltid=AfmBOorjPDmoe_iO-FXLPZyTHfqO5vK4r4Adso4Qnyej28woxTqO_-Nz" target="_blank">
+                Link
+            </a>
+        </div>
+    </div>
+
+    <h2 class="category-title">Electrocasnice & Diverse</h2>
+    <div class="product-container">
         <div class="product-card">
             <img class="img-fluid" src="img/deluxe.jpg" alt="">
             <div class="product-title">SALTEA DELUXE INTEX</div>
@@ -163,18 +210,6 @@
                 Link
             </a>
         </div>
-
-        <div class="product-card">
-            <img class="img-fluid" src="img/suflatoare.jpg" alt="">
-            <div class="product-title">Suflantă pentru frunze cu baterie litiu</div>
-            <div class="product-price">800 Lei</div>
-            <div class="product-description">DEWALT Soffiatore Foglie a Batteria Litio Velocità di soffiaggio fino a 144 Km/h</div>
-            <a class="product-link" href="https://www.amazon.it/DeWalt-DCM562P1-QW-Soffiatore-Litio-Giallo/dp/B0155WY7T2" target="_blank">
-                Link
-            </a>
-        </div>
-
-
         <div class="product-card">
             <img class="img-fluid" src="img/braun.jpg" alt="">
             <div class="product-title">Braun FS5100WH Aparat de gătit cu aburi electric</div>
@@ -184,40 +219,28 @@
                 Link
             </a>
         </div>
+    </div>
 
-
-
+    <h2 class="category-title">Monitoare & Audio</h2>
+    <div class="product-container">
         <div class="product-card">
-            <img class="img-fluid" src="img/flex.jpg" alt="">
-            <div class="product-title">DEWALT Polizor unghiular 230 mm, 2200 W</div>
-            <div class="product-price">400 Lei</div>
-            <div class="product-description">DEWALT smerigliatrice angolare 230mm 2200w, DWE492-QS</div>
-            <a class="product-link" href="https://www.amazon.it/dp/B0176NLNBS?ref=cm_sw_r_cso_wa_apin_dp_RTJ35172R0BZ6BXM98X4&ref_=cm_sw_r_cso_wa_apin_dp_RTJ35172R0BZ6BXM98X4&social_share=cm_sw_r_cso_wa_apin_dp_RTJ35172R0BZ6BXM98X4&previewDoh=1" target="_blank">
+            <img class="img-fluid" src="img/key.jpg" alt="">
+            <div class="product-title">Roland VR-09 V-Combo B</div>
+            <div class="product-price">2300 Lei</div>
+            <div class="product-description">Tastatură live cu operare simplă</div>
+            <a class="product-link" href="https://www.thomann.de/ro/roland_vr_09_v_combo_b.html" target="_blank">
                 Link
             </a>
         </div>
-
-
-
         <div class="product-card">
-            <img class="img-fluid" src="img/flex-baterie.jpg" alt="">
-            <div class="product-title">DEWALT DCG406NT-XJ Polizor unghiular 18V XR fără perii, 125 mm - FARA BATERRIE INCLUSA</div>
-            <div class="product-price">500 Lei</div>
-            <div class="product-description">DEWALT DCG406NT-XJ Polizor unghiular 18V XR fără perii- BATERIA COSTA IN JUR DE 300 de lei</div>
-            <a class="product-link" href="https://www.amazon.it/dp/B075T9ZY4W?ref=cm_sw_r_cso_wa_apin_dp_TEBVVQ2BF4H27ZMR54ZF&ref_=cm_sw_r_cso_wa_apin_dp_TEBVVQ2BF4H27ZMR54ZF&social_share=cm_sw_r_cso_wa_apin_dp_TEBVVQ2BF4H27ZMR54ZF&previewDoh=1" target="_blank">
+            <img class="img-fluid" src="img/d3.jpg" alt="">
+            <div class="product-title">Monitor Studio M-Audio BX5 D3</div>
+            <div class="product-price">300 Lei Bucata </div>
+            <div class="product-description">2 Boxe Studio M-Audio Bx5 D3</div>
+            <a class="product-link" href="https://www.flymusic.ro/monitoare-active-de-studio/33833-m-audio-bx5-d3.html" target="_blank">
                 Link
             </a>
         </div>
-
-<!--        <div class="product-card">-->
-<!--            <img class="img-fluid" src="img/polizor.jpg" alt="">-->
-<!--            <div class="product-title">Bosch Professional Fierăstrău circular GKS 55 GCE (Motor de 1350 W, diametru lamă: 165 mm, ghidaj paralel, 1 lamă</div>-->
-<!--            <div class="product-price">1000 Lei</div>-->
-<!--            <div class="product-description">Bosch Professional Sega Circolare Gks 55 Gce (Motore da 1350 Watt, Ø Lama: 165 Mm, Guida Parallela, 1 Lama, in L-Boxx 238)</div>-->
-<!--            <a class="product-link" href="https://www.amazon.it/dp/B013WAZZFE?ref=cm_sw_r_cso_wa_apin_dp_SZMKXKMX6M1ERCCJ8BJ5&ref_=cm_sw_r_cso_wa_apin_dp_SZMKXKMX6M1ERCCJ8BJ5&social_share=cm_sw_r_cso_wa_apin_dp_SZMKXKMX6M1ERCCJ8BJ5&previewDoh=1&th=1" target="_blank">-->
-<!--                Link-->
-<!--            </a>-->
-<!--        </div>-->
 
         <div class="product-card">
             <img class="img-fluid" src="img/monitor-dell.jpg" alt="">
@@ -225,6 +248,16 @@
             <div class="product-price">250 Lei</div>
             <div class="product-description">Dell SE2422HX 24" Full HD (1920x1080) Monitor, 75Hz, VA, 5ms, AMD FreeSync, HDMI, VGA Nero</div>
             <a class="product-link" href="https://www.amazon.it/dp/B0957LFHTM?ref=cm_sw_r_cso_wa_apin_dp_RWMA6VC4KQA2GKTXN49M&ref_=cm_sw_r_cso_wa_apin_dp_RWMA6VC4KQA2GKTXN49M&social_share=cm_sw_r_cso_wa_apin_dp_RWMA6VC4KQA2GKTXN49M&previewDoh=1&th=1" target="_blank">
+                Link
+            </a>
+        </div>
+
+        <div class="product-card">
+            <img class="img-fluid" src="img/msi.jpg" alt="">
+            <div class="product-title">MSI GAMING MONITOR 27"</div>
+            <div class="product-price">600 Lei</div>
+            <div class="product-description">MSI MAG 274QRF QD E2 27 Inch WQHD Gaming Monitor - 2560 x 1440 Rapid</div>
+            <a class="product-link" href="https://www.amazon.co.uk/dp/B0CPQ59G1H?ref=cm_sw_r_cso_wa_apin_dp_BVV9GXQBJD10G8NCK2HB&ref_=cm_sw_r_cso_wa_apin_dp_BVV9GXQBJD10G8NCK2HB&social_share=cm_sw_r_cso_wa_apin_dp_BVV9GXQBJD10G8NCK2HB&previewDoh=1&th=1" target="_blank">
                 Link
             </a>
         </div>
@@ -240,16 +273,6 @@
         </div>
 
         <div class="product-card">
-            <img class="img-fluid" src="img/trimmer-baterie.jpg" alt="">
-            <div class="product-title">Trimmer și Tăietor de margini cu baterie 20V - 2 baterii incluse</div>
-            <div class="product-price">400 Lei</div>
-            <div class="product-description">WORX WG163E Trimmer și Tăietor de margini cu baterie 20V- 2 baterii incluse</div>
-            <a class="product-link" href="https://www.amazon.it/dp/B01N2AMWB3?ref=cm_sw_r_cso_wa_apin_dp_P5PRC0MW68CECTD87GS3&ref_=cm_sw_r_cso_wa_apin_dp_P5PRC0MW68CECTD87GS3&social_share=cm_sw_r_cso_wa_apin_dp_P5PRC0MW68CECTD87GS3&previewDoh=1&th=1" target="_blank">
-                Link
-            </a>
-        </div>
-
-        <div class="product-card">
             <img class="img-fluid" src="img/monitor-samsung.jpg" alt="">
             <div class="product-title">SAMSUNG 27-Inch S33GC Series Business Essential Computer Monitor</div>
             <div class="product-price">350 Lei</div>
@@ -258,36 +281,29 @@
                 Link
             </a>
         </div>
+    </div>
 
-<!--        <div class="product-card">-->
-<!--            <img class="img-fluid" src="img/alienware.jpg" alt="">-->
-<!--            <div class="product-title">Monitor Alienware Gaming Curbat 31.5 "</div>-->
-<!--            <div class="product-price">3000 Lei</div>-->
-<!--            <div class="product-description">Monitor LED Alienware Gaming AW3225QF Curbat 31.5 inch UHD QD-OLED 0.03 ms 240 Hz HDR G-Sync Compatible & FreeSync Premium</div>-->
-<!--            <a class="product-link" href="https://www.cel.ro/monitor-led-alienware-gaming-aw3225qf-curbat-31-5-inch-uhd-qd-oled-0-03-ms-240-hz-hdr-g-sync-compatible-freesync-premium-pOCE3MjMtNw-l/?gad_source=5&gad_campaignid=1589918063&gclid=EAIaIQobChMIo-jCpPeQjQMVmJGDBx3w0gQjEAAYAiAAEgLHkvD_BwE" target="_blank">-->
-<!--                Link-->
-<!--            </a>-->
-<!--        </div>-->
-
+    <h2 class="category-title">Componente PC</h2>
+    <div class="product-container">
         <div class="product-card">
-            <img class="img-fluid" src="img/msi.jpg" alt="">
-            <div class="product-title">MSI GAMING MONITOR 27"</div>
-            <div class="product-price">600 Lei</div>
-            <div class="product-description">MSI MAG 274QRF QD E2 27 Inch WQHD Gaming Monitor - 2560 x 1440 Rapid</div>
-            <a class="product-link" href="https://www.amazon.co.uk/dp/B0CPQ59G1H?ref=cm_sw_r_cso_wa_apin_dp_BVV9GXQBJD10G8NCK2HB&ref_=cm_sw_r_cso_wa_apin_dp_BVV9GXQBJD10G8NCK2HB&social_share=cm_sw_r_cso_wa_apin_dp_BVV9GXQBJD10G8NCK2HB&previewDoh=1&th=1" target="_blank">
+            <img class="img-fluid" src="img/a520.jpg" alt="">
+            <div class="product-title">Placa de baza MSI A520M-A PRO, Socket AM4</div>
+            <div class="product-price">150 Lei</div>
+            <div class="product-description">Placa de baza MSI A520M-A PRO, Socket AM4</div>
+            <a class="product-link" href="https://www.emag.ro/placa-de-baza-msi-socket-am4-a520m-a-pro/pd/D4FC9DMBM/" target="_blank">
                 Link
             </a>
         </div>
-
         <div class="product-card">
-            <img class="img-fluid" src="img/mop.jpg" alt="">
-            <div class="product-title"> Mop cu aburi cu PowerPad și husă de rezervă din microfibră</div>
-            <div class="product-price">250 Lei</div>
-            <div class="product-description">Vileda Steam Plus - Mop cu aburi cu PowerPad și husă de rezervă din microfibră, elimină până la 99,9% din bacterii și viruși, pentru toate tipurile de pardoseli, ideal pentru covoare, ambalaj ecologic</div>
-            <a class="product-link" href="https://www.amazon.de/-/en/PowerPad-Microfibre-Replacement-Bacteria-Packaging/dp/B09HMGMMH1" target="_blank">
+            <img class="img-fluid" src="img/kraken.webp" alt="">
+            <div class="product-title">Cooler CPU NZXT Kraken Elite 360 RGB Black</div>
+            <div class="product-price">900 Lei</div>
+            <div class="product-description">Cooler CPU NZXT Kraken Elite 360 RGB Black</div>
+            <a class="product-link" href="https://www.pcgarage.ro/coolere/nzxt/kraken-elite-360-rgb-black/" target="_blank">
                 Link
             </a>
         </div>
+    </div>
 
         <!-- Modal Frame -->
         <div id="imageModal" class="modal" onclick="closeModal()">
@@ -299,7 +315,7 @@
 
     </div>
     <div class="new-products">
-        <h1>Produse noi sigilate, fără garanție</h1>
+        <h1>Produse noi sigilate, fără garantie !!!!   Preturile sunt negociabile.</h1>
     </div>
 
 </body>
